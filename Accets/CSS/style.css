@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Jura:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700;900&family=Mr+Dafoe&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&family=Smooch&family=Source+Code+Pro:ital,wght@0,300;1,300&family=Stint+Ultra+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Jura:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700;900&family=Mr+Dafoe&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&family=Smooch&family=Source+Code+Pro:ital,wght@0,300;1,300&family=Stint+Ultra+Condensed&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(239, 219, 132);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.main {
+    width: 80%;
+    height: max-content;
+    margin-top: 1em;
+    margin-inline: auto;
+    -webkit-box-shadow: 0px 0px 3px 1px gray;
+    box-shadow: 0px 0px 3px 1px gray;
+    margin-bottom: 0.5em;
+}
+
+.heading {
+    width: 100%;
+    height: 9em;
+    background-color: #9ACD32;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 25%;
+    float: left;
+    margin-left: 2em;
+}
+
+.logo img {
+    width: 12em;
+}
+
+.text {
+    width: 50%;
+    text-align: right;
+    margin-right: 6%;
+}
+
+.text h1 {
+    margin: 1em 0em 0em 0em;
+    padding: 0;
+    font-size: 28pt;
+    font-weight: 600;
+}
+
+.text p {
+    font-size: 14pt;
+}
+
+.midpart {
+    width: 100%;
+    height: max-content;
+    background-color: rgb(241, 228, 212);
+    border: 1px solid transparent;
+}
+
+.navbar {
+    width: 95%;
+    height: 3em;
+    margin-top: 1em;
+    background-color: #F5F5DC;
+    margin-inline: auto;
+    -webkit-box-shadow: -1px -2px 7px 0px #000000;
+    box-shadow: -1px -2px 7px 0px #000000;
+    position: sticky;
+    top: 0;
+}
+
+.navbar ul li {
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    padding: 0.2em 1em;
+
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    padding: 0.2em 2em;
+    color: black;
+    border-radius: 0.5em;
+    display: block;
+    line-height: 2em;
+    font-size: 13pt;
+}
+
+.navbar a:hover {
+    color: rgb(223, 93, 184);
+    transform: 500ms ease-in-out;
+}
+
+.navbar ul ul {
+    position: absolute;
+    top: 3em;
+    display: none;
+}
+
+.navbar ul li:hover>ul {
+    display: block;
+}
+
+.navbar ul ul li {
+    width: 11.5em;
+    float: none;
+    display: list-item;
+    position: relative;
+    background-color: #F5F5DC;
+}
+
+.navbar ul ul li:hover,
+.navbar ul ul ul li:hover {
+    background-color: rgb(178, 186, 37);
+}
+
+.navbar ul ul ul li {
+    position: relative;
+    top: -2.8em;
+    left: 12.7em;
+}
+
+.active {
+    background-color: #80b318;
+}
+
+.start {
+    border: 1.5px solid white;
+    box-shadow: 0px 0px 15px -2px #000000;
+}
+
+.start:hover {
+    background-color: rgb(239, 219, 132);
+    transition: 500ms ease-in-out;
+}
+.show{
+    display: block !important;
+  }
+.fa-solid{
+    display: none !important;
+    visibility: hidden;
+}
+.fa-solid:hover{
+    cursor: pointer;
+    color: #eb751c;
+  }
+.main-body-content{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    width: 20%;
+    height: max-content;
+}
+.left-1,
+.left-2 {
+    width: 100%;
+    height: 300px;
+    border: 1px solid transparent;
+    background-color: rgb(235, 225, 200);
+    margin-left: 0.5em;
+    margin-top: 2em;
+
+}
+.right{
+    width: 75%;
+    height: max-content;
+    margin: 2em 0em;
+    padding-left: 1em;
+    border-left: 1px solid gray;
+    background-color: rgb(235, 225, 200);
+}
+
+.gallary {
+    width: 100%;
+    /* float: right; */
+  
+}
+
+h3 {
+    font-size: 22pt;
+    margin-top: 0.8em;
+    cursor: pointer;
+}
+
+h3:hover .hover-has {
+    visibility: visible;
+}
+
+.hover-has {
+    visibility: hidden;
+    color: #585858ab;
+    font-weight: 600;
+    font-family: 'Merriweather';
+    transition: 110ms;
+}
+
+.gallary p {
+    line-height: 1.5em;
+}
+
+.gallary-img {
+    width: 100%;
+    margin-top: 2em;
+}
+
+.gallary-img img {
+    width: 32.5%;
+    height: auto;
+}
+
+.buttom {
+    display: flex;
+    width: 98%;
+    padding-left: 1em;
+    gap: 5%;
+    margin-bottom: 3em;
+}
+
+.sub{
+    width: 50%;
+    margin-bottom: 1em;
+}
+.other{
+    width: 50%;
+}
+svg {
+    width: 20px;
+    height: 20px;
+    padding-right: 0.2em;
+}
+
+.menuhead {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(178, 186, 37);
+    text-align: center;
+    padding-top: 1em;
+
+}
+
+.menuhead h2 {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.menuhead-para,
+.menuhead-para-1 {
+    padding: 1em;
+}
+
+.menuhead-para-1 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.link li {
+    list-style-type: square;
+    margin: 0.5em;
+}
+
+.link a {
+    color: gray;
+    padding-left: 0.3em;
+}
+
+.link a:hover {
+    color: hotpink;
+}
+
+.link ul {
+    margin-top: 1em;
+    margin-left: 0.8em;
+}
+.main-item-container,
+.para-container{
+    display: none;
+}
+.show-item-content{
+    display: block !important;
+}
+.modal-1 {
+    display: none;
+    /*hidden by default */
+    position: fixed;
+    /* stay in place*/
+    z-index: 1;
+    /* sit on top*/
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* full width*/
+    height: 100%;
+    /* full height*/
+    overflow: auto;
+    /*enable scroll if needed*/
+    background-color: rgb(0, 0, 0);
+    /*fallback color*/
+    background-color: rgba(0, 0, 0, 0.4);
+    /*black w/ opacity*/
+}
+
+/* modal content/box*/
+.modal-content-1 {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size
+    */
+    border-radius: .8em;
+    background: #eff8d6;
+}
+.modal-content-1 p{
+    padding-top: 1em;
+}
+
+.modal-header {
+    background-color: rgb(129, 199, 68);
+    margin: 0 -1.3em;
+    padding: .5em .8em;
+    margin-top: -1.3em;
+    border-top-left-radius: .8em;
+    border-top-right-radius: .8em;
+}
+
+.modal-header h3 {
+    margin: 0;
+    font-family: 'Merriweather';
+    font-weight: 700;
+    font-size: 15pt;
+}
+
+.modal-header .close {
+    color: #120b40;
+}
+
+.modal-1 .modal-content-1 {
+    animation-name: fromTop;
+    animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@keyframes fromTop {
+    from {
+        top: 0;
+        opacity: 0
+    }
+
+    to {
+        top: 5em;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes slideIn {
+    from {
+        top: 0;
+        opacity: 0
+    }
+
+    to {
+        top: 5em;
+        opacity: 1
+    }
+}
+
+/* the close button*/
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    padding: 0.5em 0.6em;
+    background-color: #80b318;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 0.9em;
+}
+
+#more {
+    display: none;
+}
+.intro{
+    width: 100%;
+    height: max-content;
+}
+
+.intro-content {
+    display: flex;
+    margin-top: 1em;
+}
+
+.intro img {
+    width: 15em;
+}
+
+footer {
+    width: 100%;
+    height: 3em;
+    background-color: #9ACD32;
+    margin-bottom: 0.5em;
+}
+
+footer p {
+    font-size: 14pt;
+    text-align: center;
+    padding-top: 1em;
+}
+
+/* FOR FEATURE PAGE */
+.table-body, table{
+    width: 97%;
+    height: max-content;
+    margin-inline: auto;
+    overflow-x: auto;
+}
+table{
+    margin:4em 0;
+    border-collapse: collapse;
+}
+
+thead{
+    background-color: #000000;
+    color: white;
+    width: 100%;
+    height: 2.5em;
+    font-size: 16pt;
+}
+td{
+    padding: 1em;
+    text-align: center;
+}
+tr:nth-child(even) {
+    background-color: #8F9AA5;
+}
+tbody tr:hover{
+    background-color: #80b318;
+    transition: 1s ease-in-out;
+}

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample website</title>
+    <link rel="stylesheet" href="/Accets/CSS/style.css">
+    <link rel="stylesheet" href="/Accets/CSS/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="/Accets/CSS/responsive.css">
+</head>
+
+<body>
+    <div class="main">
+        <header class="heading">
+            <div class="logo">
+                <img src="/Accets/IMAGES/LOGOS/Logo-Triangel.PNG" alt="">
+            </div>
+            <div class="text">
+                <h1>Triangle Hunt</h1>
+                <p>Anywhere any time</p>
+            </div>
+        </header>
+        <section class="midpart">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="/index.html" class="active">Home</a>
+                        <ul>
+                            <li><a href="/Page-1/sample_web.html">New Page</a></li>
+                            <li><a href="/Page-2/page_2.html">New Page 2</a></li>
+                            <li><a href="/Page-3/page_3.html">New Page 3</a></li>
+                            <li><a href="/Page-4/page_4.html">New Page 4</a>
+                                <ul>
+                                    <li><a href="/Page-4/page_4.html">Home</a></li>
+                                    <li><a href="/Page-4/about_us.html">About Us</a></li>
+                                    <li><a href="/Page-4/courses.html">Courses</a>
+                                        <ul>
+                                            <li><a href="#">Course 1</a></li>
+                                            <li><a href="#">Course 2</a></li>
+                                            <li><a href="#">Course 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="/Page-4/resources.html">Resources</a></li>
+                                    <li><a href="/Page-4/Contact_us.html">Contact Us</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/Page-5/page_5.html">New Page 5</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/Main-Home/features.html">Features</a></li>
+                    <li><a href="/Main-Home/reviews.html">Reviews</a></li>
+                    <li><a href="/Main-Home/pricing.html">Pricing</a></li>
+                    <li><a href="/Main-Home/pricing.html">FAQ</a></li>
+                    <li><a class="start" href="/Main-Home/register.html">Get Started</a></li>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="showNav()"></i>
+            </nav>
+            <div class="main-body-content">
+                <div class="left">
+                    <div class="left-1">
+                        <div class="menuhead">
+                            <h2 onclick="displayModel();" >
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                    <path
+                                        d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z" />
+                                </svg>
+                                Main Menu
+                            </h2>
+                        </div>
+                        <div class="link">
+                            <ul class="main-item-container">
+                                <li id="main-Item-1"><a href="#" onclick="modelItem1()">Menu Item 1</a></li>
+                                <li id="main-Item-2"><a href="#" onclick="modelItem2()">Menu Item 2</a></li>
+                                <li id="main-Item-3"><a href="#" onclick="modelItem3()">Menu Item 3</a></li>
+                                <li id="main-Item-4"><a href="#" onclick="modelItem4()">Menu Item 4</a></li>
+                                <li id="main-Item-5"><a href="#" onclick="modelItem5()">Menu Item 5</a></li>
+                                <li id="main-Item-6"><a href="#" onclick="modelItem6()">Menu Item 6</a></li>
+                                <li id="main-Item-7"><a href="#" onclick="modelItem7()">Menu Item 7</a></li>
+                                <li id="main-Item-8"><a href="#" onclick="modelItem8()">Menu Item 8</a></li>
+                            </ul>
+                            <div id="main-Item-model-1" class="modal-1">
+                                <!-- Modal content -->
+                                <div class="modal-content-1">
+                                    <div class="modal-header">
+                                        <span class="close">&times;</span>
+                                        <h3>Main Item 1</h3>
+                                    </div>
+                                    <p>Some text in the Modal..</p>
+        
+                                    <p>Lorem ipsum dolor sit amet,
+                                        consectetur adipisicing elit. Aliquam
+                                        dolor
+                                        esse atque, aperiam delectus tenetur
+                                        veniam
+                                        suscipit possimus inventore,
+                                        doloribus blanditiis
+                                        consequuntur, neque consequatur!
+                                        Eaque facilis
+                                        placeat molestias quis corporis.</p>
+                                </div>
+                            </div>
+                            <div id="main-Item-model-2" class="modal-1">
+                                <!-- Modal content -->
+                                <div class="modal-content-1">
+                                    <div class="modal-header">
+                                        <span class="close">&times;</span>
+                                        <h3>Main Item 2</h3>
+                                    </div>
+                                    <p>Some text in the Modal..</p>
+                                    <p>Lorem ipsum dolor sit amet,
+                                        consectetur adipisicing elit. Aliquam
+                                        dolor
+                                        esse atque, aperiam delectus tenetur
+                                        veniam
+                                        suscipit possimus inventore,
+                                        doloribus blanditiis
+                                        consequuntur, neque consequatur!
+                                        Eaque facilis
+                                        placeat molestias quis corporis.</p>
+                                </div>
+                            </div>
+                            <div id="main-Item-model-3" class="modal-1">
+                                <!-- Modal content -->
+                                <div class="modal-content-1">
+                                    <div class="modal-header">
+                                        <span class="close">&times;</span>
+                                        <h3>Main Item 3</h3>
+                                    </div>
+                                    <p>Some text in the Modal..</p>
+                                    <p>Lorem ipsum dolor sit amet,
+                                        consectetur adipisicing elit. Aliquam
+                                        dolor
+                                        esse atque, aperiam delectus tenetur
+                                        veniam
+                                        suscipit possimus inventore,
+                                        doloribus blanditiis
+                                        consequuntur, neque consequatur!
+                                        Eaque facilis
+                                        placeat molestias quis corporis.</p>
+                                </div>
+                            </div>
+                            <div id="main-Item-model-4" class="modal-1">
+                                <!-- Modal content -->
+                                <div class="modal-content-1">
+                                    <div class="modal-header">
+                                        <span class="close">&times;</span>
+                                        <h3>Main Item 4</h3>
+                                    </div>
+                                    <p>Some text in the Modal..</p>
+                                    <p>Lorem ipsum dolor sit amet,
+                                        consectetur adipisicing elit. Aliquam
+                                        dolor
+                                        esse atque, aperiam delectus tenetur
+                                        veniam
+                                        suscipit possimus inventore,
+                                        doloribus blanditiis
+                                        consequuntur, neque consequatur!
+                                        Eaque facilis
+                                        placeat molestias quis corporis.</p>
+                                </div>
+                            </div>
+                            <div id="main-Item-model-5" class="modal-1">
+                                <!-- Modal content -->
+                                <div class="modal-content-1">
+                                    <div class="modal-header">
+                                        <span class="close">&times;</span>
+                                        <h3>Main Item 5</h3>
+                                    </div>
+                                    <p>Some text in the Modal..</p>
+                                    <p>Lorem ipsum dolor sit amet,
+                                        consectetur adipisicing elit. Aliquam
+                                        dolor
+                                        esse atque, aperiam delectus tenetur
+                                        veniam
+                                        suscipit possimus inventore,
+                                        doloribus blanditiis
+                                        consequuntur, neque consequatur!
+                                        Eaque facilis
+                                        placeat molestias quis corporis.</p>
+                                </div>
+                            </div>
+                            <div id="main-Item-model-6" class="modal-1">
+                                <!-- Modal content -->
+                                <div class="modal-content-1">
+                                    <div class="modal-header">
+                                        <span class="close">&times;</span>
+                                        <h3>Main Item 6</h3>
+                                    </div>
+                                    <p>Some text in the Modal..</p>
+                                    <p>Lorem ipsum dolor sit amet,
+                                        consectetur adipisicing elit. Aliquam
+                                        dolor
+                                        esse atque, aperiam delectus tenetur
+                                        veniam
+                                        suscipit possimus inventore,
+                                        doloribus blanditiis
+                                        consequuntur, neque consequatur!
+                                        Eaque facilis
+                                        placeat molestias quis corporis.</p>
+                                </div>
+                            </div>
+                            <div id="main-Item-model-7" class="modal-1">
+                                <!-- Modal content -->
+                                <div class="modal-content-1">
+                                    <div class="modal-header">
+                                        <span class="close">&times;</span>
+                                        <h3>Main Item 7</h3>
+                                    </div>
+                                    <p>Some text in the Modal..</p>
+                                    <p>Lorem ipsum dolor sit amet,
+                                        consectetur adipisicing elit. Aliquam
+                                        dolor
+                                        esse atque, aperiam delectus tenetur
+                                        veniam
+                                        suscipit possimus inventore,
+                                        doloribus blanditiis
+                                        consequuntur, neque consequatur!
+                                        Eaque facilis
+                                        placeat molestias quis corporis.</p>
+                                </div>
+                            </div>
+                            <div id="main-Item-model-8" class="modal-1">
+                                <!-- Modal content -->
+                                <div class="modal-content-1">
+                                    <div class="modal-header">
+                                        <span class="close">&times;</span>
+                                        <h3>Main Item 8</h3>
+                                    </div>
+                                    <p>Some text in the Modal..</p>
+                                    <p>Lorem ipsum dolor sit amet,
+                                        consectetur adipisicing elit. Aliquam
+                                        dolor
+                                        esse atque, aperiam delectus tenetur
+                                        veniam
+                                        suscipit possimus inventore,
+                                        doloribus blanditiis
+                                        consequuntur, neque consequatur!
+                                        Eaque facilis
+                                        placeat molestias quis corporis.</p>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+                    <div class="left-2">
+                        <div class="menuhead">
+                            <h2 onclick="displayModel2();">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                    <path
+                                        d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z" />
+                                </svg>
+                                Block
+                            </h2>
+                        </div>
+                        <div class="para-container">
+                            <p class="menuhead-para">Enter Block content here...</p>
+                            <p class="menuhead-para-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo veniam ipsum
+                                dolorum, placeat dolorem
+                                animi esse hic excepturi asperiores molestias.</p>
+                        </div>
+                       
+                    </div>
+                </div>
+               <div class="right">
+                <div class="gallary">
+                    <h3>Gallery <span class="hover-has">#</span></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum rerum nemo, temporibus magni minus
+                        perferendis quis est quaerat? Architecto asperiores error fugiat veniam voluptatum itaque fugit, ad
+                        sapiente eligendi nobis quas atque voluptas delectus, hic, ratione dicta porro? Nesciunt numquam
+                        architecto delectus quidem sed, accusantium, doloribus accusamus sint velit nostrum esse! Adipisci
+                        praesentium, delectus sunt distinctio officiis quibusdam, ullam magnam laudantium cumque maxime
+                        cupiditate excepturi error vel! Voluptates, a. Beatae quia eos eligendi ex corporis esse
+                        perferendis, repellat quis expedita assumenda qui id voluptas aliquam veniam voluptatibus accusamus
+                        blanditiis aperiam! Consectetur voluptas, neque officia esse animi ex voluptates eius doloribus
+                        incidunt ratione necessitatibus eum exercitationem vero excepturi totam asperiores quae explicabo
+                        ab in? Ducimus cumque asperiores nobis consequatur.</p>
+                    <div class="gallary-img">
+                        <img src="/Accets/IMAGES/BANNERS/download (2).jpg" alt="">
+                        <img src="/Accets/IMAGES/BANNERS/download (5).jpg" alt="">
+                        <img src="/Accets/IMAGES/BANNERS/download (3).jpg" alt="">
+                        <img src="/Accets/IMAGES/BANNERS/download.jpg" alt="">
+                        <img src="/Accets/IMAGES/BANNERS/download (1).jpg" alt="">
+                        <img src="/Accets/IMAGES/BANNERS/download (4).jpg" alt="">
+                    </div>
+                    <div class="buttom">
+                        <div class="sub">
+                            <h3>Subscription<span class="hover-has">#</span></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, neque, in officia
+                                consequatur
+                                veritatis sit facere obcaecati doloribus corporis saepe voluptatem odit sunt quo qui
+                                officiis
+                                placeat culpa eius? Eligendi nesciunt quo recusandae doloremque facilis labore et qui, eos
+                                aliquid
+                                architecto quas officiis dolore soluta neque nobis. Inventore, omnis pariatur.
+                                <span id="dots">...</span>
+                                <span id="more">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus provident
+                                    eveniet
+                                    veritatis architecto nostrum sunt magni, recusandae odio fugiat dolores.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus provident eveniet
+                                    veritatis architecto nostrum sunt magni.</span>
+                            </p>
+                            <button onclick="readMore()" id="read-more">Read More</button>
+                        </div>
+                        <hr>
+                        <div class="other">
+                            <h3>Other Services<span class="hover-has">#</span></h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam fuga mollitia quae dolorum,
+                                modi
+                                impedit nesciunt ut culpa necessitatibus architecto ipsa nam quia deserunt sed laborum
+                                exercitationem temporibus esse et! Repudiandae nemo praesentium excepturi assumenda ullam
+                                reiciendis
+                                aperiam doloremque totam asperiores optio omnis suscipit vitae, voluptatem eos ab, porro a?
+                                <span id="dots1">...</span>
+                                <span id="more1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat iure, et
+                                    id ullam magni eum! Corporis consequuntur non dolores voluptates eos pariatur? Eveniet,
+                                    dolor eaque fuga dignissimos rerum adipisci magni.</span>
+                            </p>
+                            <button onclick="showMore()" id="read-more1">Read More</button>
+                        </div>
+                    </div>
+                    <div class="intro">
+                        <h3>Introduction<span class="hover-has">#</span></h3>
+                        <div class="intro-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem harum, excepturi iste
+                                nulla
+                                quo unde a nisi assumenda quos, placeat ad accusamus, ea ipsum aut. Hic repellat est vitae
+                                magni
+                                rem, vero quia officia odio! Repellendus quaerat asperiores delectus odit tempore, pariatur
+                                iusto a possimus sunt maiores ratione, eum obcaecati.
+                                quo unde a nisi assumenda quos, placeat ad accusamus, ea ipsum aut. Hic repellat est vitae
+                                magni
+                                rem, vero quia officia odio! Repellendus quaerat asperiores delectus odit tempore, pariatur
+                                iusto a possimus sunt maiores ratione, eum obcaecati.</p>
+                            <img src="/Accets/IMAGES/ICONS/noname.png
+                            " alt="">
+                        </div>
+                    </div>
+                </div>
+               </div>
+                
+            </div>
+            <footer>
+                <p>Copyright @ 2014.</p>
+            </footer>
+        </section>
+    </div>
+    <script src="/Accets/JS/script.js"></script>
+</body>
+
+</html>

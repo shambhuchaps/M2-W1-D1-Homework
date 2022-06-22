@@ -1,0 +1,150 @@
+@media only screen and (max-width:1295px){
+    .main{
+        width: 90%;
+    }
+    .navbar {
+        height: 2.5em;
+    }
+    .navbar ul li {
+        padding: 0.1em 0.5em;
+    }
+    .navbar ul li a {
+        padding: 0.5em 2em;
+        line-height: 1em;
+        font-size: 12pt;
+    }
+    .navbar ul ul {
+        top: 2.5em;
+    }
+    .navbar ul ul li{
+        width: 8.2em; 
+    }
+    .navbar ul ul ul li {
+        top: -2.5em;
+        left: 8.6em;
+    }
+    .menuhead{
+        height: 35px;
+    }
+    .menuhead h2 {
+        font-size: 120%;
+    }
+    svg {
+        width: 15px;
+        height: 15px;
+    }
+    .gallary p{
+        font-size: 90%;
+    }
+    .left-1,.left-2{
+        height: max-content;
+    }
+}
+@media only screen and (max-width:970px){
+    .navbar ul li {     
+        padding: 0.1em 0.2em;
+    }
+    .fa-solid{
+        display: none;
+    }
+    .navbar ul li a{
+        padding: 0.5em 1.5em;
+        line-height: 1em;
+        font-size: 12pt;
+    }
+}
+@media only screen and (max-width:806px){
+    /* .navbar{
+        display: none;
+    } */
+    .fa-solid{
+        visibility: visible;
+        display: block !important;
+        padding: 1em;
+    }
+    .navbar ul{
+        display: none;
+        position: absolute;
+        top: 3.2em;
+        left: 2em;
+        width: 8em !important;
+        height: max-content;
+        background: #F5F5DC;
+        border-radius: .5em;
+      }
+      .navbar ul ul {
+        position: absolute;
+        top: 0em;
+        left: 8em;
+        display: none;
+    }
+    .navbar ul ul ul li {
+        position: relative;
+        top: -1em;
+        left: 1.5em;
+    }
+      .navbar ul li{
+        display: inline-block;
+        width: 88%;
+        padding: .5em;
+        border-bottom: 1px solid gray;
+      }
+      .navbar ul li:last-child{
+        border-bottom: none;
+      }
+    .main-body-content{
+        display: block !important;
+    }
+    .right{
+        margin-inline: auto;
+        width: 90%;
+    }
+    .left{
+        width: 90%;
+        margin-inline: auto;
+    }
+}
+@media only screen and (max-width:600px){
+    .fa-solid{
+        visibility: visible;
+        display: block !important;
+        padding: 1em;
+    }
+    .navbar ul{
+        display: none;
+        position: absolute;
+        top: 3em;
+        left: 2em;
+        width: 8em !important;
+        height: max-content;
+        background: #F5F5DC;
+        border-radius: .5em;
+      }
+      .navbar ul ul {
+        position: absolute;
+        top: 0em;
+        left: 8em;
+        display: none;
+    }
+      .navbar ul li{
+        display: inline-block;
+        width: 88%;
+        padding: .5em;
+        border-bottom: 1px solid gray;
+      }
+      .navbar ul li:last-child{
+        border-bottom: none;
+      }
+    .buttom{
+        display: block;
+    }
+    .intro-content{
+        display: block;
+    }
+    .sub{
+        width: 100%;
+    }
+    .other{
+        width: 100%;
+    }
+}

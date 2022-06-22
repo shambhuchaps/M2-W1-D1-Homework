@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page5 Website</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&family=Mr+Dafoe&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&family=Smooch&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&family=Mr+Dafoe&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&family=Smooch&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(8, 8, 37);
+        }
+
+        .main {
+            width: 80%;
+            height: max-content;
+            margin-inline: auto;
+            margin-top: 1em;
+            border-radius: 0.5em;
+            margin-bottom: 2em;
+        }
+
+        .heading {
+            width: 100%;
+            height: 15em;
+            background-color: #353574ab;
+            display: flex;
+        }
+
+        .imgcontainer {
+            width: 30%;
+            height: 8em;
+        }
+
+        .heading img {
+            width: 15em;
+            margin-top: 2em;
+            margin-left: 3em;
+        }
+
+        h1 {
+            font-size: 60pt;
+            color: white;
+            margin-top: 0.8em;
+            font-family: 'Poppins';
+            font-weight: 500;
+        }
+
+        .middle {
+            width: 100%;
+            background-color: white;
+            height: 400px;
+        }
+
+        .left {
+            width: 20%;
+
+        }
+
+        .left ul li{
+            position: relative;
+            list-style: none;
+            display: inline-block;
+            margin-left: 2em;
+            padding:0.2em 1em;
+            border-bottom: 1px solid black;
+        }
+
+        .left ul li a {
+            text-decoration: none;
+            color: brown;
+            padding: 0.4em 1em;
+            font-size: 16pt;
+            border-radius: 0.5em;
+            line-height: 1em;
+            display: block;
+        }
+        
+        .left a:hover{
+            color: rgb(8, 8, 37);
+            transition: 500ms ease-in-out;
+        }
+        .left ul ul{
+            position: absolute;
+            top: 0em;
+            left: 7em;
+            display: none;
+        }
+        .left ul li:hover > ul{
+            display: block;
+        }
+        .left ul ul li{
+            width: 11.9em;
+            float: none;
+            display: list-item;
+            position: relative;
+            background-color: #F5F5DC;
+        }
+        .left ul ul li:hover,
+        .left ul ul ul li:hover{
+            background-color:rgb(178, 186, 37);
+        }
+        .left ul ul ul li{
+            position: relative;
+            top: 0em;
+            left: 3.1em;
+        }
+        .active{
+            background-color: green;
+            color: white !important;
+        }
+        .start{
+            border: 1.5px solid white;
+            box-shadow: 0px 0px 15px -2px #000000;
+            margin-top: 0.5em;
+        }
+        .start:hover{
+            color: white !important;
+            background-color: black;
+            transition: 500ms ease-in-out;
+        }
+
+        .left p {
+            margin: 2em;
+        }
+
+        .middle {
+            display: flex;
+            width: 100%;
+            height: max-content;
+        }
+
+        .text {
+            width: 70%;
+            margin-left: 2em;
+        }
+
+        .text h1 {
+            color: black;
+            font-size: 25pt;
+            font-weight: 600;
+        }
+        .text p{
+            margin-top: 1em;
+            font-size: 14pt;
+        }
+        footer{
+            width: 100%;
+            height: 4em;
+            background-color: #955b5b;
+            border-bottom-right-radius: 1em;
+            border-bottom-left-radius: 1em;
+        }
+        footer p{
+            color: white;
+            text-align: center;
+            padding-top: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="main">
+        <header class="heading">
+            <div class="imgcontainer">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAv6UDqvJ7LI1O7ccWw3IxaMABGCbtYoHM2g&usqp=CAU"
+                    alt="">
+            </div>
+
+            <h1>My Wbsite!</h1>
+        </header>
+        <section class="middle">
+            <aside class="left">
+                <ul>
+                    <li><a href="index.html">Home</a>
+                        <ul>
+                            <li><a href="sample_web.html">New Page</a></li>
+                            <li><a href="page_2.html">New Page 2</a></li>
+                            <li><a href="page_3.html">New Page 3</a></li>
+                            <li><a href="page_4.html">New Page 4</a>
+                                <ul>
+                                    <li><a href="/Page-5/page_5.html">Home</a></li>
+                                    <li><a href="/Page-5/about_us.html">About Us</a></li>
+                                    <li><a href="/Page-5/courses.html">Courses</a>
+                                     <ul>
+                                         <li><a href="#">Course 1</a></li>
+                                         <li><a href="#">Course 2</a></li>
+                                         <li><a href="#">Course 3</a></li>
+                                     </ul>
+                                 </li>
+                                    <li><a href="/Page-5/resources.html">Resources</a></li>
+                                    <li><a href="/Page-5/contact_us.html">Contact Us</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="page_5.html">New Page 5</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a class="start" href="register.html">Get Started</a></li>
+                </ul>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora maiores architecto ut consequuntur
+                    modi fugiat repellat mollitia nisi quod ab, saepe distinctio facere! Impedit praesentium deserunt
+                    aliquid corporis ratione dicta quasi. Sequi ex commodi, hic amet ipsum sit ut molestiae tenetur iste.</p>
+            </aside>
+            <div class="text">
+                <h1>Lorem Ipsum</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente tempore est fugit et quod sequi,
+                    quas minus iure eius quis nulla esse animi fugiat velit. A deleniti consequuntur ratione
+                    perspiciatis error quasi quae inventore doloremque velit veniam cumque assumenda laborum sunt sit
+                    tempora quisquam natus porro, illo eos nobis nam.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente tempore est fugit et quod sequi,
+                    quas minus iure eius quis nulla esse animi fugiat velit. A deleniti consequuntur ratione
+                    perspiciatis error quasi quae inventore doloremque velit veniam cumque assumenda laborum sunt sit
+                    tempora quisquam natus porro, illo eos nobis nam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis aliquam quasi reprehenderit voluptatem
+                    cupiditate eos ipsa similique, quia sapiente qui consequuntur exercitationem obcaecati assumenda
+                    perferendis, repellendus molestiae blanditiis nihil praesentium dolores aspernatur? Autem,
+                    reprehenderit quis voluptates molestiae sint incidunt tempore, omnis doloremque nisi officia
+                    numquam, eligendi temporibus natus dignissimos expedita aspernatur qui. Quisquam quod odit aut
+                    nesciunt totam et modi minima quia, magni, ullam obcaecati beatae ipsam dolore atque, earum nobis
+                    ducimus sit porro. Facilis minima dignissimos itaque, recusandae non placeat! Dicta nemo nisi
+                    excepturi, doloremque totam ipsam consectetur quo eos vero voluptatum et dolores culpa, quam quod
+                    voluptatem! Nulla!</p>
+
+            </div>
+
+        </section>
+        <footer>
+            <p>@Foobar Inc.</p>
+        </footer>
+    </section>
+</body>
+
+</html>

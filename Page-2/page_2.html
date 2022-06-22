@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: rgba(245, 245, 245, 0)
+        }
+
+        .main {
+            width: 85%;
+            height: max-content;
+            background-color: darkgrey;
+            margin-inline: auto;
+        }
+
+        .logo h1 {
+            font-size: 20pt;
+            padding: 0.5em;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .logo span {
+            font-weight: 100;
+            margin-left: -0.2em;
+        }
+
+        .navbar {
+            width: 100%;
+            height: 3.3em;
+            background-color: black;
+            margin-top: 1em;
+        }
+
+        .navbar ul li {
+            position: relative;
+            list-style: none;
+            display: inline-block;
+            padding: 0.2em 1em;
+        }
+
+        .navbar ul li a {
+            display: block;
+            padding: 0 2em;
+            color: white;
+            text-decoration: none;
+            line-height: 2.5em;
+            font-size: 13pt;
+            border-radius: 0.5em;
+            padding-top: 0.2em;
+        }
+
+        .navbar a:hover {
+            color: yellow;
+            transition: 500ms ease-in-out;
+        }
+
+        .navbar ul ul {
+            position: absolute;
+            top: 3em;
+            left: 0em;
+            display: none;
+        }
+
+        .navbar ul li:hover>ul {
+            display: block;
+        }
+
+        .navbar ul ul li {
+            width: 11.5em;
+            float: none;
+            display: list-item;
+            position: relative;
+            background-color: #393636;
+        }
+
+        .navbar ul ul li:hover,
+        .navbar ul ul ul li:hover {
+            background-color: #362525;
+        }
+
+        .navbar ul ul ul li {
+            position: relative;
+            top: -3.1em;
+            left: 11.1em;
+        }
+
+        .navbar .active {
+            background-color: #6B8E23;
+        }
+
+        .start {
+            border: 1.5px solid white;
+            box-shadow: 0px 0px 15px -2px #f2eeee;
+        }
+
+        .start:hover {
+            color: black !important;
+            background-color: white;
+            transition: 500ms ease-in-out;
+        }
+
+        .face {
+            float: right;
+        }
+
+        .face svg {
+            width: 28px;
+            height: 28px;
+            fill: white;
+            padding: 0.6em;
+        }
+
+        .header-img {
+            width: 100%;
+            height: 22em;
+            background-color: #99cd32bf;
+        }
+
+        .header-img h2 {
+            text-align: center;
+            color: white;
+            font-size: 30pt;
+            font-weight: 100;
+            padding-top: 2.5em;
+        }
+
+        .middle {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            background-color: darkgrey;
+
+            margin-top: 1.5em;
+        }
+
+        .mid1,
+        .mid2,
+        .mid3 {
+            width: 31%;
+            padding: 1em 0.5em;
+            background-color: whitesmoke;
+
+        }
+
+        .mid1 h3,
+        .mid2 h3,
+        .mid3 h3 {
+            margin: 0;
+        }
+
+        .last {
+            width: 80%;
+            margin-top: 1.5em;
+            background-color: whitesmoke;
+            padding: 1em 0.5em;
+        }
+
+        .last h3 {
+            font-size: 22pt;
+            font-weight: 500;
+        }
+
+        .last h4 {
+            font-size: 14pt;
+            font-weight: 200;
+        }
+
+        .lastmid {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .rightside {
+            width: 20%;
+            background-color: whitesmoke;
+            margin-top: 1.5em;
+        }
+
+        .rightside .rmenu {
+            width: 80%;
+            background-color: grey;
+            margin-left: 0;
+        }
+
+        .rightside .rmenu ul {
+            padding-left: 0.7em;
+        }
+
+        .rightside .rmenu li {
+            list-style: none;
+            margin: 0.8em 0em;
+            padding: 1em 0em;
+        }
+
+        .rightside .rmenu a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .gheading {
+            text-align: center;
+            font-weight: 500;
+            font-size: 25pt;
+        }
+
+        .gallary-container {
+            width: 100%;
+            display: flex;
+        }
+
+        .gallary1,
+        .gallary2,
+        .gallary3,
+        .gallary4 {
+            width: 25%;
+            border: 1px solid transparent;
+            height: 8em;
+        }
+
+        .gallary1 {
+            background-color: #87CEFA;
+        }
+
+        .gallary2 {
+            background-color: #6B8E23;
+        }
+
+        .gallary3 {
+            background-color: #FFD700;
+        }
+
+        .gallary4 {
+            background-color: #FF6347;
+        }
+
+        .gallary1 p,
+        .gallary2 p,
+        .gallary3 p,
+        .gallary4 p {
+            text-align: center;
+            color: white;
+            padding-top: 2.5em;
+        }
+
+        footer {
+            width: 100%;
+            margin-top: 4em;
+            background-color: whitesmoke;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.8em;
+        }
+
+        footer p {
+            padding: 1em;
+        }
+
+        .pright {
+            color: #95d318;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="logo">
+            <h1>site <span>logo</span></h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a>
+                    <ul>
+                        <li><a href="sample_web.html">New Page</a></li>
+                        <li><a href="page_2.html">New Page 2</a></li>
+                        <li><a href="page_3.html">New Page 3</a></li>
+                        <li><a href="page_4.html">New Page 4</a>
+                            <ul>
+                                <li><a href="/Page-2/page_2.html">Home</a></li>
+                                <li><a href="/Page-2/about_us.html">About Us</a></li>
+                                <li><a href="/Page-2/courses.html">Courses</a>
+                                    <ul>
+                                        <li><a href="#">Course 1</a></li>
+                                        <li><a href="#">Course 2</a></li>
+                                        <li><a href="#">Course 3</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/Page-2/resources.html">Resources</a></li>
+                                <li><a href="/Page-2/Contact_us.html">Contact Us</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="page_5.html">New Page 5</a></li>
+                    </ul>
+                </li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a class="start" href="register.html">Get Started</a></li>
+                <div class="face">
+                    <a href="www.facebook.com"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path
+                                d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+                        </svg>
+                    </a>
+                </div>
+            </ul>
+        </nav>
+        <div class="header-img">
+            <h2>Header Image</h2>
+        </div>
+        <div class="middle">
+            <div class="mid1">
+                <h3>About</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quod et eligendi laboriosam, maiores
+                    fugit alias molestias rerum perspiciatis neque quidem numquam nemo sunt odio esse tenetur quam
+                    deleniti at.</p>
+            </div>
+            <div class="mid2">
+                <h3>Company</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quod et eligendi laboriosam, maiores
+                    fugit alias molestias rerum perspiciatis neque quidem numquam nemo sunt odio esse tenetur quam
+                    deleniti at.</p>
+            </div>
+            <div class="mid3">
+                <h3>Services</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quod et eligendi laboriosam, maiores
+                    fugit alias molestias rerum perspiciatis neque quidem numquam nemo sunt odio esse tenetur quam
+                    deleniti at.</p>
+            </div>
+        </div>
+        <div class="lastmid">
+            <div class="last">
+                <h3>Content</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eligendi esse laudantium consequatur
+                    ab
+                    dignissimos animi saepe? Iste blanditiis in accusamus aut quis ad laborum officia provident! Autem
+                    labore sint tenetur laboriosam sed eius quam!</p>
+                <h4>Sub Header</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio natus sit quia inventore cumque
+                    autem
+                    consequuntur enim nobis eveniet, corporis, quasi mollitia debitis veniam exercitationem facere at
+                    vel.
+                    Temporibus corrupti error similique dolor fugiat. Aperiam doloribus illum modi ea quisquam debitis.
+                    Voluptatum quod debitis fuga porro possimus, cumque mollitia dicta.</p>
+            </div>
+            <div class="rightside">
+                <h3>Navigation</h3>
+                <div class="rmenu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h2 class="gheading">Gallery</h2>
+        <div class="gallary-container">
+            <div class="gallary1">
+                <p>Gallary Image</p>
+            </div>
+            <div class="gallary2">
+                <p>Gallary Image</p>
+            </div>
+            <div class="gallary3">
+                <p>Gallary Image</p>
+            </div>
+            <div class="gallary4">
+                <p>Gallary Image</p>
+            </div>
+        </div>
+        <footer>
+            <p>Copyright 2018, Vision Design - graphic zoo</p>
+            <p class="pright">Design and coding by Responsee Team</p>
+        </footer>
+    </div>
+</body>
+
+</html>
