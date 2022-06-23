@@ -435,7 +435,7 @@ footer p {
     padding-top: 1em;
 }
 
-/* FOR FEATURE PAGE */
+/* FOR PRICING PAGE */
 .table-body, table{
     width: 97%;
     height: max-content;
@@ -454,14 +454,138 @@ thead{
     height: 2.5em;
     font-size: 16pt;
 }
-td{
+.table-body td{
     padding: 1em;
     text-align: center;
 }
-tr:nth-child(even) {
+.table-body tr:nth-child(even) {
     background-color: #8F9AA5;
 }
-tbody tr:hover{
+.table-body tbody tr:hover{
     background-color: #80b318;
     transition: 1s ease-in-out;
+    cursor: pointer;
+}
+.last-table{
+    width: 95%;
+    border: 15px solid gray;
+    border-top: 25px solid gray;
+    margin-inline: auto;
+    background-color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: auto;
+}
+.another-head{
+    background-color: #0000008b;
+    height: 2.5em;
+    width: 100%;
+    font-size: 14pt;
+}
+tbody td,
+tfoot td{
+    padding: 1em 0 1em 3em;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(255, 255, 255);
+}
+tfoot{
+    background-color: white;
+}
+.another-head2{
+    background-color: #38a238;
+    font-size: 38pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.another-head2 th{
+    padding: 0;
+    border-bottom: 2px dashed #38a238;
+}
+.another-head2 sup{
+    font-size: 20pt;
+}
+tbody td .fa-regular{
+    color: rgb(65, 191, 65) !important;
+    margin-right: .5em;
+}
+tbody td .fan{
+    color: red !important;
+}
+.tablebtn{
+    color: white;
+    font-size: 14pt;
+    padding:0.4em 2.5em;
+    background-color: #000000;
+}
+
+/* FOR FEATURE PAGE */
+
+.grid-container{
+    width: 95%;
+    margin: 2em 0;
+    margin-inline: auto;
+    display: grid;
+    grid-template-areas: 'box1 box1 box1 box1 box2 box2 box2 box2 box3 box3 box3 box3'
+                         'box4 box4 box4 box4 box5 box5 box5 box5 box6 box6 box6 box6'
+                         'box7 box7 box7 box8 box8 box8 box9 box9 box9 box10 box10 box10';
+}
+.grid-container h1{
+    margin: 1em;
+}
+.grid-container .fas{
+    margin: 1em 0 0 2em;
+    padding: .5em;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.features-1{
+    grid-area: box1;
+    background: rgb(13, 123,196);
+    color: #fff;
+}
+.features-2{
+    grid-area: box2;
+    background: #a746a7;
+    color: #fff;
+}
+.features-3{
+    grid-area: box3;
+    background: #1a748b;
+    color: #fff;
+}
+.features-4{
+    grid-area: box4;
+    background: #e08f1f;
+    color: #fff;
+}
+.features-5{
+    grid-area: box5;
+    background: #248d6c;
+    color: #fff;
+}
+.features-6{
+    grid-area: box6;
+    background: rgb(13, 123,196);
+    color: #fff;
+}
+
+.features-7{
+    grid-area: box7;
+    background: #207739;
+    color: #fff;
+}
+.features-8{
+    grid-area: box8;
+    background: rgb(13, 123,196);
+    color: #fff;
+}
+.features-9{
+    grid-area: box9;
+    background: #a746a7;
+    color: #fff
+}
+.features-10{
+    grid-area: box10;
+    background: #e08f1f;
+    color: #fff;
 }

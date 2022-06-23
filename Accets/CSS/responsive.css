@@ -1,46 +1,71 @@
-@media only screen and (max-width:1295px){
-    .main{
+@media only screen and (max-width:1286px) {
+    .main {
         width: 90%;
     }
-    .navbar {
-        height: 2.5em;
+
+    .navbar ul {
+        height: 2.8em;
     }
+
     .navbar ul li {
         padding: 0.1em 0.5em;
     }
+
     .navbar ul li a {
         padding: 0.5em 2em;
         line-height: 1em;
-        font-size: 12pt;
+        font-size: 14pt;
     }
+
     .navbar ul ul {
         top: 2.5em;
     }
-    .navbar ul ul li{
-        width: 8.2em; 
+
+    .navbar ul ul li {
+        width: 8.2em;
     }
+
     .navbar ul ul ul li {
         top: -2.5em;
         left: 8.6em;
     }
-    .menuhead{
+
+    .menuhead {
         height: 35px;
     }
+
     .menuhead h2 {
         font-size: 120%;
     }
+
     svg {
         width: 15px;
         height: 15px;
     }
-    .gallary p{
+
+    .gallary p {
         font-size: 90%;
     }
-    .left-1,.left-2{
+
+    .left-1,
+    .left-2 {
         height: max-content;
     }
 }
-@media only screen and (max-width:970px){
+
+@media only screen and (max-width:1125px) {
+    .navbar ul li {
+        padding: 0.1em 0.3em;
+    }
+
+    .navbar ul li a {
+        padding: 0.5em 1.5em;
+        line-height: 1em;
+        font-size: 13pt;
+    }
+}
+
+/* @media only screen and (max-width:890px){
     .navbar ul li {     
         padding: 0.1em 0.2em;
     }
@@ -52,17 +77,16 @@
         line-height: 1em;
         font-size: 12pt;
     }
-}
-@media only screen and (max-width:806px){
-    /* .navbar{
-        display: none;
-    } */
-    .fa-solid{
+} */
+@media only screen and (max-width:890px) {
+
+    .fa-solid {
         visibility: visible;
         display: block !important;
         padding: 1em;
     }
-    .navbar ul{
+
+    .navbar ul {
         display: none;
         position: absolute;
         top: 3.2em;
@@ -71,46 +95,63 @@
         height: max-content;
         background: #F5F5DC;
         border-radius: .5em;
-      }
-      .navbar ul ul {
+    }
+
+    .navbar ul ul {
         position: absolute;
         top: 0em;
         left: 8em;
         display: none;
     }
+
     .navbar ul ul ul li {
         position: relative;
-        top: -1em;
+        top: em;
         left: 1.5em;
     }
-      .navbar ul li{
+
+    .navbar ul li {
         display: inline-block;
         width: 88%;
         padding: .5em;
         border-bottom: 1px solid gray;
-      }
-      .navbar ul li:last-child{
+    }
+
+    .navbar ul li:last-child {
         border-bottom: none;
-      }
-    .main-body-content{
+    }
+
+    .main-body-content {
         display: block !important;
     }
-    .right{
+
+    .right {
         margin-inline: auto;
         width: 90%;
     }
-    .left{
+
+    .left {
         width: 90%;
         margin-inline: auto;
     }
+    .grid-container{
+        grid-template-areas: 'box1 box1 box1 box1 box2 box2 box2 box2' 
+                             'box3 box3 box3 box3  box4 box4 box4 box4'
+                             'box5 box5 box5 box5 box6 box6 box6 box6'
+                             'box7 box7 box7 box8 box8 box8' 
+                             'box9 box9 box9 box10 box10 box10' !important;
+    }
+
 }
-@media only screen and (max-width:600px){
-    .fa-solid{
+
+@media only screen and (max-width:600px) {
+    .fa-solid {
         visibility: visible;
         display: block !important;
         padding: 1em;
     }
-    .navbar ul{
+
+    .navbar ul {
         display: none;
         position: absolute;
         top: 3em;
@@ -119,32 +160,39 @@
         height: max-content;
         background: #F5F5DC;
         border-radius: .5em;
-      }
-      .navbar ul ul {
+    }
+
+    .navbar ul ul {
         position: absolute;
         top: 0em;
         left: 8em;
         display: none;
     }
-      .navbar ul li{
+
+    .navbar ul li {
         display: inline-block;
         width: 88%;
         padding: .5em;
         border-bottom: 1px solid gray;
-      }
-      .navbar ul li:last-child{
+    }
+
+    .navbar ul li:last-child {
         border-bottom: none;
-      }
-    .buttom{
+    }
+
+    .buttom {
         display: block;
     }
-    .intro-content{
+
+    .intro-content {
         display: block;
     }
-    .sub{
+
+    .sub {
         width: 100%;
     }
-    .other{
+
+    .other {
         width: 100%;
     }
 }
