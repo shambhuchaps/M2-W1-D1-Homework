@@ -141,6 +141,17 @@
                              'box7 box7 box7 box8 box8 box8' 
                              'box9 box9 box9 box10 box10 box10' !important;
     }
+      /* for fqa */
+      .get-acc{
+        display: block;
+    }
+    .get{
+        width: 100%;
+    }
+    .gett, .acc{
+        width: 80%;
+        margin-inline: auto;
+    }
 
 }
 

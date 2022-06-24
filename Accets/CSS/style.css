@@ -643,7 +643,7 @@ tbody td .fan{
 .faq-body2 h2{
     font-size: 25pt;
     font-weight: 300;
-    padding: 3em 0 0 2em;
+    padding: 3em 0 0.5em 2em;
     color: rgb(68, 67, 67);
 }
 .get-acc{
@@ -663,6 +663,8 @@ tbody td .fan{
     font-size: 18pt;
     font-weight: 200;
     color: gray;
+    position: relative;
+    margin-bottom: 1em;
 }
 .gett p,
 .acc p{
@@ -670,4 +672,16 @@ tbody td .fan{
     border: 1px solid rgba(128, 128, 128, 0.374);
     padding: .5em 0 .5em 1em;
     margin: .5em 0;
+}
+.gett h3::after,
+.acc h3::after{
+    content: "";
+    background-color: #5bac8e;
+    display: inline-block;
+    width: 3em;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 1.6em;
 }
